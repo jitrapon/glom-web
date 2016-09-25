@@ -1,23 +1,21 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png"></img>
-    <div class="normal-txt" id="text">{{ message }}</div>
+    <event></event>
   </div>
 </template>
 
 <script>
+  import Event from './components/event/Event'
+
   export default {
-    data () {
-      return {
-        message: 'Hello World!'
-      }
+    components: {
+      Event
     }
   }
 </script>
 
 <style>
-  .normal-txt {
+  body {
     font-family: Helvetica, sans-serif;
-    font-size: 30px;
   }
 </style>
